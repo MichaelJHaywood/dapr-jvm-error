@@ -3,5 +3,5 @@
 FROM gradle:7.5.0-jdk17-alpine
 COPY --chown=gradle:gradle . /home/gradle/src
 WORKDIR /home/gradle/src
-RUN gradle build test --no-daemon ; exit 0
+RUN gradle build test --no-daemon
 
